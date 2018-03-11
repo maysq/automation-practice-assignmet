@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="register_addItem_suite">
+    <test name="register_AddItem_Test">
+        <parameter name="baseURL" value="http://automationpractice.com/index.php"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="automation_practices.Registration">
+                <methods>
+                    <include name="verifyValidRegistration"/>
+                </methods>
+            </class>
+            <class name="automation_practices.Search">
+                <methods>
+                    <include name="verifyValidSearchItems"/>
+                </methods>
+            </class>
+            <class name="automation_practices.AddItems">
+                <methods>
+                    <include name="verifyValidAddItemToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

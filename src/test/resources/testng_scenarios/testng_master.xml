@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Master_TestNG_Suite">
+    <suite-files>
+        <suite-file path="register_additem_scenario.xml"/>
+        <suite-file path="register_addItem_checkout_scenario.xml"/>
+        <suite-file path="login_additem_scenario.xml"/>
+        <suite-file path="Login_additem_chkout_scenario.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Add_Item_Suite">
+    <test name="Add_Items_to_Cart_Scenario">
+        <parameter name="email" value="iisleem+6@winfooz.com"/>
+        <parameter name="password" value="12345678a"/>
+        <parameter name="baseURL" value="http://automationpractice.com/index.php"/>
+        <parameter name="browser" value="firefox"/>
+
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name="addItemsToCart"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+
+        <classes>
+            <class name="automation_practices.Registration">
+                <methods>
+                    <include name="verifyValidRegistration"/>
+                </methods>
+            </class>
+            <class name="automation_practices.Search">
+                <methods>
+                    <include name="verifyValidSearchItems"/>
+                </methods>
+            </class>
+            <class name="automation_practices.AddItems">
+                <methods>
+                    <include name="verifyValidAddItemToCart"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

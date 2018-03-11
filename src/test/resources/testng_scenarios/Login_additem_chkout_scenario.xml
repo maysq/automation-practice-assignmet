@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login_AddItems_Checkout_suite">
+    <test name="Login_add_items_checkout_test">
+        <parameter name="baseURL" value="http://automationpractice.com/index.php"/>
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="automation_practices.Login">
+                <methods>
+                    <include name="verifyValidLogin"/>
+                </methods>
+            </class>
+            <class name="automation_practices.Search">
+                <methods>
+                    <include name="verifyValidSearchItems"/>
+                </methods>
+            </class>
+            <class name="automation_practices.AddItems">
+                <methods>
+                    <include name="verifyValidAddItemToCart"/>
+                </methods>
+            </class>
+            <class name="automation_practices.CheckoutProcess">
+                <methods>
+                    <include name="verifyCheckOutSuccessful"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
