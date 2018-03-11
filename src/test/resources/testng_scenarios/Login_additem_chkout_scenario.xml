@@ -3,7 +3,7 @@
 <suite name="Login_AddItems_Checkout_suite">
     <test name="Login_add_items_checkout_test">
         <parameter name="baseURL" value="http://automationpractice.com/index.php"/>
-        <parameter name="browser" value="firefox"/>
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="automation_practices.Login">
                 <methods>
